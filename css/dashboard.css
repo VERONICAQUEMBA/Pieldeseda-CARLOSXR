@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --blanco: #E0E0E0;
+    --azul-opacidad: #3eb5ec;
+    --bg-menu:  transparent;
+    --bg-body: #C7E1FF;
+}
+
+/* GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--blanco);
+    background-image: url('../img/fondo2.png');
+    display: flex;
+  
+  height: 100vh;
+}
+
+/* LAYOUT */
+
+.menu-dashboard {
+    max-width: 231px;
+    height: 100vh;
+    background:  var(--bg-menu);
+    backdrop-filter: blur(7px);
+    padding: 24px;
+    transition: max-width .3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu .logo img {
+    width: 61px;
+    transition: width .3s ease;
+}
+
+.top-menu .logo span {
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+/*RALLITAS*/
+
+.top-menu .toggle {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.top-menu .toggle i {
+    font-size: 35px;
+}
+
+/* BUSCADOR */
+
+div.input-search {
+    width: 150%;
+    height: 8%;
+    margin: -8px 1px 0px 1000px;
+    background-color:  var(--azul-opacidad);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 34px;
+}
+
+.input-search i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.input-search .input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    color: var(--blanco);
+    font-size: 22px;
+    display: none;
+}
+
+/* ENLACES MENU */
+
+.menu .enlace {
+    width: 100%;
+    padding: 45px 0 17px 29px;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease;
+    color: #001aff;
+    font-weight: bold;
+}
+
+.menu .enlace:hover {
+    background: var(--azul-opacidad);
+    width: 1px 1px 1px 3px;
+    margin: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
+}
+.menu .enlace i {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.menu .enlace span {
+    opacity: 3;
+    transition: opacity .3s ease;
+    color: #cff4f7f3;
+    font-weight: bold;
+}
+
+.menu-dashboard.open {
+    max-width: 300px;
+}
+
+.menu-dashboard.open .top-menu .logo span {
+    display: block;
+}
+
+.menu-dashboard.open .input-search
+.menu-dashboard.open .menu .enlace {
+    width: auto;
+}
+
+.menu-dashboard.open .input-search .input {
+    display: block;
+}
+
+.menu-dashboard.open .menu .enlace {
+    padding: 20px;
+}
+
+.menu-dashboard.open .menu .enlace span {
+    opacity: 1;
+}
+.logo h1 {
+    font-size: 17px;
+    color: #cff4f7f3;
+    font-weight: bold;
+    padding: auto;
+}
+h1{
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+  
+  
+  
+  
+  
+  
